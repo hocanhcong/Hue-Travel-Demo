@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/myCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- NavBar cho PC và tablet -->
+                <nav id="my-header-navbar" class="my-header-navbar navbar navbar-expand-md bg-success fixed-top"
+                    style="padding: 0;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid navbar-brand-logo" src="./images/TrangChu/huevisit.png" alt="Logo">
+                            <span class="navbar-brand-title">HUẾ TRAVEL</span>
+                        </a>
+                    
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav" style="list-style: none;">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Khám phá Huế
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="LichSu.html">
+                                                                <img src="./images/submenu/vuagialong.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Lịch sử</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/vanhoa.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Văn hóa Huế</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/disan.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Di sản</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/amthuc.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Ẩm thực Huế</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Điều cần làm
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="TourDuLichKhamPhaHue.html">
+                                                                <img src="./images/submenu/tourdulich.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Tour du lịch</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/luutru.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Lưu trú</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/vanchuyen.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Dịch vụ ăn uống</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/muasam.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Mua sắm</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Độc đáo Huế
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/tinhhoahue.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Tinh hoa Huế</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/sukientrongtuan.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Sự kiện trong tuần</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/huebian.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Huế bí ẩn</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/huecuachungta.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Huế của chúng mình</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactForm.html">Liên hệ</a>
+                                </li>
+                                <!-- <audio controls autoplay style="position: absolute;right: 0;height: 30px;">
+                                    <source src="./audio/Nang Tho Xu Hue - Thuy Chi.mp3" type="audio/mpeg">
+                                </audio> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- NavBar mobile -->
+                <nav id="my-header-navbar-version-2" class="my-header-navbar-version-2 navbar navbar-expand-md bg-primary fixed-top navbar-dark">
+                    <div class="container" style="display: flex;justify-content: left;">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid navbar-brand-logo" src="./images/TrangChu/huevisit.png" alt="Logo">
+                            <span class="navbar-brand-title">HUẾ TRAVEL</span>
+                        </a>
+
+                        <div id="mobile-menu" class="mobile-menu-btn">
+                            <i class="menu-icon fa fa-bars"></i>
+                        </div>
+
+                        <!-- Links -->
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Khám phá Huế
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="LichSu.html">Lịch sử</a>
+                                        <a class="dropdown-item" href="LichSu.html">Văn hóa Huế</a>
+                                        <a class="dropdown-item" href="LichSu.html">Di sản</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="LichSu.html">Ẩm thực Huế</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Điều cần làm
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Tour du lịch</a>
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Dịch vụ ăn uống</a>
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Mua sắm</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Lưu trú</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Độc đáo Huế
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="index.html">Tinh hoa Huế</a>
+                                        <a class="dropdown-item" href="index.html">Sự kiện trong tuần</a>
+                                        <a class="dropdown-item" href="index.html">Huế bí ẩn</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="index.html">Huế của chúng mình</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactForm.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding: 0px;">
+                <img class="img-fluid" style="width: 100%;" src="./images/contactform/contact-background.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row" style="display: flex; ">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="width: 100%;"> 
+                <ul style="list-style-type: none;display: flex;flex-direction: column;width: auto;">
+                    <li style="padding: 40px 30px;border: 1px solid #dfe3e9;margin-bottom: 10px;box-shadow: none;">
+                        <div>
+                            <a href="" style="color: #530297;font-size: 18px;font-family: QuickSand;font-weight: bold;">Hotline</a>
+                        </div>
+                        <div>
+                            <span style="font-family: Muli;">0234.3823288</span>
+                        </div>
+                    </li>
+                    <li style="padding: 40px 30px;border: 1px solid #dfe3e9;margin-bottom: 10px;box-shadow: none;">
+                        <div>
+                            <a href="" style="color: #530297;font-size: 18px;font-family: QuickSand;font-weight: bold;">Sở Du lịch tỉnh Thừa Thiên Huế</a>
+                        </div>
+                        <div>
+                            <span style="font-family: Muli;">Địa chỉ: Tầng 4, 22 Tố Hữu, Thành phố Huế</span>
+                        </div>
+                    </li>
+                    <li style="padding: 40px 30px;border: 1px solid #dfe3e9;margin-bottom: 10px;box-shadow: none;">
+                        <div>
+                            <a href="" style="color: #530297;font-size: 18px;font-family: QuickSand;font-weight: bold;">Trung tâm Thông tin Xúc tiến Du lịch</a>
+                        </div>
+                        <div>
+                            <span style="font-family: Muli;">Địa chỉ: Số 04 Hoàng Hoa Thám, Thành phố Huế.</span>
+                        </div>
+                    </li>  
+                </ul>
+            </div>  
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="width: 100%;display: flex;flex-direction: column;">
+                
+                    <span style="font-weight: bold;font-size: 16px;">Gửi email cho chúng tôi</span>
+                    <p style="margin-top: 10px;margin-bottom: 40px;">
+                        <span>
+                            <i>
+                                Nếu quý vị có bất cứ câu hỏi hay góp ý gì, xin vui lòng liên hệ với chúng tôi qua địa chỉ email sau: sdl@thuathienhue.gov.vn. Chúng tôi sẽ nỗ lực để giải đáp những thắc mắc của quý vị.
+                            </i>
+                        </span>
+                    </p>
+                
+                <textarea name="Nội dung" id="" cols="30" rows="2" placeholder="Contents" style="padding:5px;width: 100%;"></textarea>
+                <form action="">
+                    <div class="form-group">
+                        <label for="uname">Username:</label><br/>
+                        <input class="form-control" type="text" required placeholder="Your name" style="padding: 5px;width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="uname">Email:</label><br/>
+                        <input class="form-control" type="email" required placeholder="Email" style="padding: 5px;width: 100%;">
+                    </div>
+                </form>
+                <div style="display: flex;flex-direction: row;">
+                    <img src="./images/contactform/securitycode.html" alt="">
+                    <input class="form-control ml-3" type="email" required placeholder="Enter the security code" style="padding: 5px;width: 40%;">
+                </div>
+                <div class="mt-3">
+                    <input class="form-control" type="submit" required placeholder="Submit" style="padding: 5px;width: 15%;background-color: #ccc;">
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="padding: 0px;">
+                <img class="img-fluid" style="width: 100%;" src="./images/contactform/BannerTMG_24_1_2018_07_52_42_651_AM.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+<!-- Start of section website-link -->
+    <section id="website_link" class="mt-3">
+        <div class="container" style="padding: 50px 0px;">
+            <div id="website_link_part-1" class="row row-cols-1 row-cols-sm-1">
+                
+                <div class="website_link_part-1-child col-12 col-sm-12 col-md-3 col-xl-3 col-lg-3">
+                    <span class="website-link-title">wwww.visithue.vn</span>
+                    <a href="">Explore Hue</a><br/>
+                    <a href="">Necessary information</a><br/>
+                    <a href="">Contact</a>
+                </div>
+
+                <!-- <div class="vertical-line"></div> -->
+
+                <div class="website_link_part-1-child col-12 col-sm-12 col-md-3 col-xl-3 col-lg-3">
+                    <span class="website-link-title">Website link</span>
+                    <a href="">sdl.thuathienhue.gov.vn</a>
+                </div>
+
+                <!-- <div class="vertical-line"></div> -->
+
+                <div class="website_link_part-1-child col-12 col-sm-12 col-md-3 col-xl-3 col-lg-3">
+                    <span class="website-link-title">Email Newsletter</span>
+                    <div class="form-inline d-flex">
+                        <div>
+                            <input size="12" class="form-control" type="email" required placeholder="Fill your email" style="padding: 5px;border: none;background-color: #ccc;opacity: 0.5;border-radius: 0;">
+
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-dark" style="border-radius: 0px;padding: 1px 6px;font-size: 15px;height: 38px;">Register</button>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- <div class="vertical-line"></div> -->
+                
+                <div class="website_link_part-1-child col-12 col-sm-12 col-md-3 col-xl-3 col-lg-3">
+                    <span class="website-link-title">Contact us</span>
+                    <i class="fa fa-facebook website-link-title-icon" aria-hidden="true"></i>
+                    <i class="fa fa-twitter website-link-title-icon"></i>
+                    <i class="fa fa-google-plus website-link-title-icon"></i>
+                    <i class="fa fa-youtube website-link-title-icon"></i>
+                    <i class="fa fa-telegram website-link-title-icon"></i>
+                </div>  
+            </div>
+
+            <div class="our-partner row mt-5 row-cols-2 row-cols-sm-2">
+                <div class="col-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
+                    <span style="font-size: 16px;font-family: Quicksand;">
+                        <strong>Partner</strong>
+                    </span>
+                </div>
+                <div class="col-6 col-sm-6 col-md-9 col-lg-9 col-9 partner-1">
+                    <div class="row">
+                        <div class="col-6 col-md-3 col-sm-6 col-xl-3 col-lg-3">
+                            <img src="./images/TrangChu/tmg.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-sm-6 col-xl-3 col-lg-3">
+                            <img src="./images/TrangChu/vietravel.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-sm-6 col-xl-3 col-lg-3">
+                            <img src="./images/TrangChu/victoria.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-sm-6 col-xl-3 col-lg-3">
+                            <img src="./images/TrangChu/ivivu.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-partner row mt-3 row-cols-3 row-cols-sm-3">
+                <div class="col-6 col-md-3 col-sm-3 col-xl-3 col-lg-3">
+
+                </div>
+                <div class="col-6 col-md-9 col-sm-9 col-lg-9 col-9 partner-2">
+                    <div class="row">
+                        <div class="col-6 col-md-3 col-sm-3 col-xl-3 col-lg-3">
+                            <img src="./images/TrangChu/fanfay.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-sm-3 col-xl-3 col-lg-3">
+                            <img src="./images/TrangChu/vietnamairline.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-sm-3 col-xl-3 col-lg-3">
+                            <img src="./images/TrangChu/traveloka.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-sm-3 col-xl-3 col-lg-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of section website-link -->
+    
+    <!-- Section footer -->
+    <footer class="text-center bg-dark text-white container-fluid" style="padding: 15px 0px;font-family: Quicksand;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <a class="text-white" href="" style="font-size: 14px;">
+                    <strong>THUA THIEN HUE TOURISM DEPARTMENT</strong>
+                </a>
+                <p style="font-size: 12px;margin-bottom: 10px;">
+                    Responsible for the content: Mr. Tran Huu<br/>
+                    Thuy Giang - Director of License No. 06/2017/GP-TTDT -<br/>
+                    Issued on November 29, 2017 Clearly Stating the source of "visithue.vn" or "huetourism.gov.vn" when reissuing information.<br/>
+                </p>
+                <span style="font-size: 12px;">Registered by 
+                    <a class="text-white" href="">Hue Tourism Portal</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="./js/myjs.js"></script>
+</body>
+</html>

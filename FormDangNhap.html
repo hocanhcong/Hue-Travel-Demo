@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Member Login Form Hue Travel</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/LoginForm/background3.jpg'),url('./images/LoginForm/Black-Wallpaper-8.jpg');
+    background-size: contain,contain;
+    background-repeat: no-repeat,repeat-x;
+    background-attachment: fixed,fixed;
+}
+.background{
+    width: 430px;
+    height: 725px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+/* .background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+} */
+form{
+    height: 725px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 75%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back_previous_page{
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 5px 0;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.back_previous_page a{
+    color: #080710;
+}
+.input_login{
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input_register{
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+#after_login
+{
+    display: none;
+}
+
+/* Responsive */
+
+/* PC */
+@media (min-width:1024px)
+{
+    body{
+    background-image: url('./images/LoginForm/Black-Wallpaper-8.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+form{
+    height: 725px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.background{
+    width: 430px;
+    height: 725px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+}
+
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px)
+{
+    body{
+    background-image: url('./images/LoginForm/Black-Wallpaper-8.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+form{
+    height: 725px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.background{
+    width: 430px;
+    height: 725px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+}
+
+/* Mobile */
+@media (max-width:740px)
+{
+    body{
+    background-image: url('./images/LoginForm/Black-Wallpaper-8.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+form{
+    height: 725px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.background{
+    width: 430px;
+    height: 725px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+}
+    </style>
+    
+</head>
+<body>
+
+    <form id="login-form" action="" method="post" enctype="text/plain" style="display: block;">
+        <h3 id="before_login">Login Form<br/>
+
+        </h3>
+        <h3 id="after_login">Login Successful <br/>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-heart"></i>
+        </h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <!-- <input value="Gửi thông tin" name="submit" type="button" class="Bai1_button" id="Bai1_submit" onclick="submitsuccess();"> -->
+
+            <input class="input_login" value="Log In" name="submit" type="button" onclick="dangnhapthanhcong()">
+            
+            <input class="input_login" value="Still Not Have An Account Yet?" name="submit" type="button" onclick="signup()">
+
+            <div class="back_previous_page">
+                <a href="TourDuLichKhamPhaHue.html"> 
+                    <i class="fa fa-arrow-left text-dark"></i>
+                    Back To Previous Page
+                </a>
+            </div>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+        <label align="center" for="" id="login_form_hello"></label>
+        
+    </form>
+
+    <!-- Register form -->
+    <form id="register-form" action="" method="post" enctype="text/plain" style="display: none;">
+        <h3 id="before_register">Register Form<br/></h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="register-form-username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="register-form-password">
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="register-form-email">
+
+        <!-- <input value="Gửi thông tin" name="submit" type="button" class="Bai1_button" id="Bai1_submit" onclick="submitsuccess();"> -->
+
+            <input class="input_login" value="I agree to create account" name="submit" type="button" onclick="dangkythanhcong()">
+
+            <input class="input_register" value="Back To Login Form" name="submit" type="button" onclick="backtologinform()">
+
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+        <label align="center" for="" id="register_form_hello"></label>
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script language="javascript" type="text/javascript">
+        function dangnhapthanhcong()
+        {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if(username ==="" || password==="")
+            {
+                login_form_hello.innerHTML='Vui lòng điền đủ thông tin';
+            }
+            else
+            {
+    
+                login_form_hello.innerHTML='Mừng bạn đến với Huế mộng mơ <b>' /*+ username.value + '</b>'*/;
+                $(document).ready(function()
+                {
+                    var success = true;
+                    if(success)
+                    {
+                        $("#after_login").css("display","block");
+                        $("#before_login").css("display","none");
+                    }
+                })
+            }
+        }
+
+
+
+
+
+
+
+
+        
+        function dangkythanhcong()
+        {
+            var username = document.getElementById('register-form-username').value;
+            var password = document.getElementById('register-form-password').value;
+            var email = document.getElementById('register-form-email').value;
+            if(username ==="" || password===""||email==="")
+            {
+                register_form_hello.innerHTML='Vui lòng điền đủ thông tin';
+            }
+            else
+            {
+    
+                register_form_hello.innerHTML='Mừng bạn đăng ký thành công <b>' /*+ username.value + '</b>'*/;
+
+            }
+        }
+        function backtologinform(){
+            $(document).ready(function()
+                {
+                    var success = true;
+                    if(success)
+                    {
+                        $("#login-form").css("display","block");
+                        $("#register-form").css("display","none");
+                    }
+                })
+        }
+        function signup(){
+            $(document).ready(function()
+                {
+                    var success = true;
+                    if(success)
+                    {
+                        $("#login-form").css("display","none");
+                        $("#register-form").css("display","block");
+                    }
+                })
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

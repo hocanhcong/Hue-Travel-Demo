@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Du Lịch Khám Phá Huế</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/myCSSForPageTourDuLich.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
+    <script language="javascript" type="text/javascript">
+        function dangnhapthanhcong() {
+            var username = document.getElementById('tourdulich_hoten').value;
+            var telephone = document.getElementById('tourdulich_telephone').value;
+            var numsofmature = document.getElementById('tourdulich_form_nguoilon').value;
+            var numsofchildren = document.getElementById('tourdulich_treem').value;
+            if (username === "" || telephone === "" || numsofmature === "" || numsofchildren === "") {
+                tourdulich_successfulregister.innerHTML = '<b><i>Vui lòng nhập đủ họ tên, điện thoại, số người lớn & số trẻ em!!!</i></b>';
+                return;
+            }
+            if (isNaN(telephone) || isNaN(numsofmature) || isNaN(numsofchildren) || numsofchildren < 0 || numsofmature < 0) {
+                tourdulich_successfulregister.innerHTML = '<b><i>Điện thoại, số người lớn & trẻ em phải là một con số dương !!!</i></b>';
+                return;
+            }
+            else {
+                tourdulich_successfulregister.innerHTML = '<b>Bạn đã đăng ký thành công<b>'
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- NavBar cho PC và tablet -->
+                <nav id="my-header-navbar" class="my-header-navbar navbar navbar-expand-md bg-success fixed-top"
+                    style="padding: 0;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid navbar-brand-logo" src="./images/TrangChu/huevisit.png" alt="Logo">
+                            <span class="navbar-brand-title">HUẾ TRAVEL</span>
+                        </a>
+                    
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav" style="list-style: none;">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Khám phá Huế
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="LichSu.html">
+                                                                <img src="./images/submenu/vuagialong.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Lịch sử</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/vanhoa.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Văn hóa Huế</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/disan.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Di sản</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/amthuc.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Ẩm thực Huế</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Điều cần làm
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="TourDuLichKhamPhaHue.html">
+                                                                <img src="./images/submenu/tourdulich.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Tour du lịch</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/luutru.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Lưu trú</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/vanchuyen.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Dịch vụ ăn uống</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/muasam.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Mua sắm</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Độc đáo Huế
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/tinhhoahue.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Tinh hoa Huế</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/sukientrongtuan.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Sự kiện trong tuần</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/huebian.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Huế bí ẩn</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/huecuachungta.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Huế của chúng mình</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactForm.html">Liên hệ</a>
+                                </li>
+                                <!-- <audio controls autoplay style="position: absolute;right: 0;height: 30px;">
+                                    <source src="./audio/Nang Tho Xu Hue - Thuy Chi.mp3" type="audio/mpeg">
+                                </audio> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- NavBar mobile -->
+                <nav id="my-header-navbar-version-2" class="my-header-navbar-version-2 navbar navbar-expand-md bg-primary fixed-top navbar-dark">
+                    <div class="container" style="display: flex;justify-content: left;">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid navbar-brand-logo" src="./images/TrangChu/huevisit.png" alt="Logo">
+                            <span class="navbar-brand-title">HUẾ TRAVEL</span>
+                        </a>
+
+                        <div id="mobile-menu" class="mobile-menu-btn">
+                            <i class="menu-icon fa fa-bars"></i>
+                        </div>
+
+                        <!-- Links -->
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Khám phá Huế
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="LichSu.html">Lịch sử</a>
+                                        <a class="dropdown-item" href="LichSu.html">Văn hóa Huế</a>
+                                        <a class="dropdown-item" href="LichSu.html">Di sản</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="LichSu.html">Ẩm thực Huế</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Điều cần làm
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Tour du lịch</a>
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Dịch vụ ăn uống</a>
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Mua sắm</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Lưu trú</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Độc đáo Huế
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="index.html">Tinh hoa Huế</a>
+                                        <a class="dropdown-item" href="index.html">Sự kiện trong tuần</a>
+                                        <a class="dropdown-item" href="index.html">Huế bí ẩn</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="index.html">Huế của chúng mình</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactForm.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    
+    <!-- Mở đầu phần second navbar  -->
+    <section id="second_navbar">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+                <div class="col-sm-2 col-md-6 col-lg-2" style="display: flex;justify-content: center;">
+                    <img class="img-fluid"
+                        src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                        alt="">
+                </div>
+                <div class="search_box col-sm-4 col-md-6 col-lg 4">
+                    <input type="text" class="search_box_finding" name="" placeholder="Type to search">
+                    <div>
+                        <a class="search_btn" href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="second_navbar-special col-sm-6 col-md-12 col-lg-6 pd-0" >
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 ">
+                        <div class="second_navbar_assess-btn col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                            <i class="second_navbar-special-icon fal fa-pencil"></i>
+                            <button>
+                                <span>Assess</span>
+                            </button>
+                        </div>
+                        <div class="second_navbar_assess-btn col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                            <i class="second_navbar-special-icon far fa-heart"></i>
+                            <button>
+                                <span>Trip</span>
+                            </button>
+                        </div>
+                        <div class="second_navbar_assess-btn col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                            <i class="second_navbar-special-icon far fa-bell"></i>
+                            <button>
+                                <span>Announcement</span>
+                            </button>
+                        </div>
+                        <div class="second_navbar_assess-btn col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                            <button type="button" class="btn text-white" style="background-color: black;border-radius: 20px;">
+                                <a href="FormDangNhap.html" style="color: #fff;font-size: 20px;">Log In</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explore_hue">
+        <div class="container">
+            <div class="explore_hue-tieude row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <span>
+                        <span style="color: #FF5D5D;">Khám phá</span>
+                        <span>Huế</span>
+                    </span>
+                </div>
+            </div>
+            <!-- <div class="explore_hue-menu row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>        
+            </div> -->
+        </div>
+    </section>
+    <!-- <div class="container hue_tourism">
+        <div class="row" style="display: flex;">
+            <div class="col-sm-7 col-md-7 col-lg-7">
+                <img class="img-fluid" style="object-fit:cover;" src="./images/TourDuLichKhamPhaHue/hue-imperial-city-citadel.jpg" alt="">
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5" style="display:flex;flex: 1;">
+                <div class="row" style="display: flex;flex-direction: column;flex: 1;">
+                    <div class="col-sm-6 col-md-6 col-lg-6" style="display: flex;">
+                        <img src="./images/TourDuLichKhamPhaHue/entrance.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6" style="display: flex;flex-grow: 1;flex-direction: row;">
+                        <img style="object-fit: cover;" src="./images/TourDuLichKhamPhaHue/cat-tuong-quan-zen-house.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Kết thúc phần second navbar -->
+    <!-- About Huế -->
+    <div class="container tour_about_hue mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h3 style="font-size: 28px;font-weight: bold;">Giới thiệu về Huế</h3>
+                <p style="font-size: 20px; text-align: justify;">Huế nằm ven bờ sông Hương, con sông chia kinh đô của Triều Nguyễn thành hai nửa. Có vô số di tích lịch sử không thể bỏ qua, đặc biệt là những di tích được UNESCO công nhận là Di sản Thế giới. Các danh lam thắng cảnh có thể bao gồm Hoàng thành trang trí công phu, Cầu Thanh Toàn đầy màu sắc, những ngôi mộ hoàng gia và Tử Cấm Thành. Dành một chút thời gian trầm tư tĩnh lặng nếu bạn tham quan Khe Đá Mài Huế, nơi hàng ngàn người dân đã bị dồn tới chết.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Huế Features -->
+    <div class="container tour_hue_features mt-5 mb-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h3 style="font-size: 28px;font-weight: bold;">Nét đặc trưng Huế</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Have Fun -->
+    <div class="container">
+        <div class="row">
+            <!-- chiếm 3 cột -->
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <h3>Vui chơi</h3>
+                <p>Địa điểm tham quan, hoạt động khám phá và những trải nghiệm tiêu biểu.</p>
+                <span style="text-decoration: underline;font-weight: bold;">Xem tất cả</span><br />
+                <button type="button" class="btn btn-success mt-3" data-toggle="modal" data-target="#myModal">
+                    Đăng ký tour du lịch Huế
+                </button>
+            </div>
+            <!-- chiếm 9 cột -->
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <div id="welcome-carousel-tour-hue-have-fun" class="carousel slide welcome-carousel-tour-hue-have-fun"
+                    data-ride="carousel" style="position: relative;">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#welcome-carousel-tour-hue-have-fun" data-slide-to="0" class="active"></li>
+                        <li data-target="#welcome-carousel-tour-hue-have-fun" data-slide-to="1"></li>
+                        <li data-target="#welcome-carousel-tour-hue-have-fun" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh1.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Hoàng Thành Huế</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Địa danh lịch sử</span>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh2.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Vườn quốc gia Bạch Mã</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">307</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Công viên quốc gia</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh3.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Lăng vua Minh Mạng</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">2.592</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Địa danh lịch sử</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh4.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Chùa Thiên Mụ</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">3.768</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Tòa nhà kiến trúc, địa điểm tôn giáo</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh5.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Lăng vua Tự Đức</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">2.062</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Địa danh lịch sử</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh6.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Tử Cấm Thành</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">983</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Địa danh lịch sử</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh7.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Cầu Ngói Thanh Toàn</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">415</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Cầu</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh8.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Lăng vua Khải Định</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">578</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Địa danh lịch sử</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh9.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Lăng mộ hoàng gia</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Kiến trúc trung đại, khu lăng mộ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#welcome-carousel-tour-hue-have-fun" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#welcome-carousel-tour-hue-have-fun" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Stay -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- chiếm 3 cột -->
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <h3>Lưu trú</h3>
+                <p>Sự kết hợp của nét quyến rũ, vẻ hiện đại và tính chân thực.</p>
+                <span style="text-decoration: underline;font-weight: bold;">Xem tất cả</span><br />
+                <button type="button" class="btn btn-success mt-3" data-toggle="modal" data-target="#myModal">
+                    Đăng ký tour du lịch Huế
+                </button>
+            </div>
+            <!-- chiếm 9 cột -->
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <div id="welcome-carousel-tour-hue-stay" class="carousel slide welcome-carousel-tour-hue-stay"
+                    data-ride="carousel" style="position: relative;">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#welcome-carousel-tour-hue-stay" data-slide-to="0" class="active"></li>
+                        <li data-target="#welcome-carousel-tour-hue-stay" data-slide-to="1"></li>
+                        <li data-target="#welcome-carousel-tour-hue-stay" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh10.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Biệt thự Huế Riverside</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh11.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Vinpearl
+                                            Hotel Huế</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh12.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Hotel la
+                                            Perle</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh13.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Hue
+                                            Shining Hotel</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh14.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Alba
+                                            Wellness Resort</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh15.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Mellow Hue
+                                            Hotel</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh16.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">The
+                                            Scarlett Hotel</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh17.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Diamond
+                                            Hotel</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh18.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Charming
+                                            Hotel</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#welcome-carousel-tour-hue-stay" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#welcome-carousel-tour-hue-stay" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dinner -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- chiếm 3 cột -->
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <h3>Dùng bữa</h3>
+                <p>Những địa điểm ăn uống và thưởng tiệc không thể bỏ lỡ.</p>
+                <span style="text-decoration: underline;font-weight: bold;">Xem tất cả</span><br />
+                <button type="button" class="btn btn-success mt-3" data-toggle="modal" data-target="#myModal">
+                    Đăng ký tour du lịch Huế
+                </button>
+            </div>
+            <!-- chiếm 9 cột -->
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <div id="welcome-carousel-tour-hue-dine" class="carousel slide welcome-carousel-tour-hue-dine"
+                    data-ride="carousel" style="position: relative;">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#welcome-carousel-tour-hue-dine" data-slide-to="0" class="active"></li>
+                        <li data-target="#welcome-carousel-tour-hue-dine" data-slide-to="1"></li>
+                        <li data-target="#welcome-carousel-tour-hue-dine" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh19.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">COZY
+                                            Restaurant & Coffee</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$ • American, Coffee,
+                                            Asian Style</span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh20.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Serene
+                                            Cuisine Restaurant</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$ • American, Coffee,
+                                            Asian Style</span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh21.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title"
+                                            href="FormDangNhap.html">COCOCLUB</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$$ - $$$ • Italian, Pizza,
+                                            French</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh22.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Quán cơm bà Thu</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$ • Tốt cho sức khỏe, phù hợp với người ăn chay</span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh23.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Bistro
+                                            34'</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$ • European, Asian,
+                                            Vietnamese style</span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh24.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Cocosnack
+                                            Cococlub</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$ • Bar, Pizza, European
+                                            Style</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh25.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Nhà hàng Spice Việt</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$$ - $$$ • Kiểu Á, kiểu Việt, phù hợp với người ăn chay</span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh26.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Secret
+                                            Lounge Hue</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">$$ - $$$ • Bar</span>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item-child col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Huefeature/hinh27.jpg"
+                                        alt="">
+                                    <button class="carousel-item-btn">
+                                        <i class="far fa-heart carousel-item-btn-icon"></i>
+                                    </button>
+                                    <div class="carousel-item-badge">
+                                        <img class="img-fluid"
+                                            src="./images/TourDuLichKhamPhaHue/Huefeature/travellerchoiceaward.png"
+                                            alt="">
+                                    </div>
+                                    <div class="carousel-item-child-content">
+                                        <a class="carousel-item-child-content-title" href="FormDangNhap.html">Nhà hàng Hot Tuna</a><br />
+                                        <span class="carousel-item-child-content-score">
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <span style="color: black;">10.903</span>
+                                        </span><br />
+                                        <span class="carousel-item-child-content-exoticplace">Hot Tuna Restaurant</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#welcome-carousel-tour-hue-dine" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#welcome-carousel-tour-hue-dine" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- It's a wonderful thing in Hue -->
+    <div class="container tour_hue_features mt-5 mb-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h2 style="font-size: 28px;font-weight: bold;">Điều Tuyệt Vời Ở Huế</h2>
+                <h3 style="font-size: 24px;font-weight: bold;">Ăn & uống</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-sm-2 row-cols-md-2">
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Eat&Drink/hinh1.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">Vietnamese Spice
+                        Restaurant</a><br />
+                    <span class="carousel-item-child-content-score">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <span style="color: black;">10.903</span>
+                    </span><br />
+                    <span class="carousel-item-child-content-exoticplace">$$ - $$$ • Asian style, Vietnamese style,
+                        Suitable for vegetarians</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Eat&Drink/hinh2.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">Le Parfum</a><br />
+                    <span class="carousel-item-child-content-score">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <span style="color: black;">10.903</span>
+                    </span><br />
+                    <span class="carousel-item-child-content-exoticplace">$$$$ • French, European, Asian style</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Eat&Drink/hinh3.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">Nina's Cafe</a><br />
+                    <span class="carousel-item-child-content-score">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <span style="color: black;">10.903</span>
+                    </span><br />
+                    <span class="carousel-item-child-content-exoticplace">$ • Asian style, Vietnamese style, Suitable
+                        for vegetarians</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Eat&Drink/hinh4.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">Bistro 34'</a><br />
+                    <span class="carousel-item-child-content-score">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <span style="color: black;">10.903</span>
+                    </span><br />
+                    <span class="carousel-item-child-content-exoticplace">$ • European, Asian, Vietnamese style</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Art and history -->
+    <div class="container tour_hue_features mt-5 mb-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h3 style="font-size: 24px;font-weight: bold;">Art and history</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-sm-2">
+
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Art&History/hinh1.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">Phòng triển lãm nghệ thuật Điềm Phùng Thị</a><br />
+                        <span class="carousel-item-child-content-score">
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <i class="fas fa-circle"></i>
+                            <span style="color: black;">10.903</span>
+                        </span><br />
+                        <span class="carousel-item-child-content-exoticplace">Viện bảo tàng nghệ thuật</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Art&History/hinh2.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">Không Gian Văn Hóa Lục Bộ</a><br />
+                    <span class="carousel-item-child-content-score">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <span style="color: black;">10.903</span>
+                    </span><br />
+                    <span class="carousel-item-child-content-exoticplace">Địa điểm lịch sử, Điểm thu hút khách tham quan & thắng cảnh</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Art&History/hinh3.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">St Francis Xavier
+                        Cathedral</a><br />
+                    <span class="carousel-item-child-content-score">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <span style="color: black;">10.903</span>
+                    </span><br />
+                    <span class="carousel-item-child-content-exoticplace">Địa điểm tôn giáo</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <img class="img-fluid" src="./images/TourDuLichKhamPhaHue/Art&History/hinh4.jpg" alt="">
+                <div class="carousel-item-child-content">
+                    <a class="carousel-item-child-content-title" href="FormDangNhap.html">Đông Khuyết Đài - The Mosaic of Hue</a><br />
+                    <span class="carousel-item-child-content-score">
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <span style="color: black;">10.903</span>
+                    </span><br />
+                    <span class="carousel-item-child-content-exoticplace">Phòng trưng bày nghệ thuật, Nhà hát & biểu diễn</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12">
+                <!-- Button to Open the Modal -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Open modal
+        </button> -->
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="color: #3d729b;">ĐĂNG KÝ DU LỊCH HUẾ MỘNG MƠ</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="tourdulich_body">
+                                    <form class="tourdulich_form">
+                                        <table class="tourdulich_table table-success table table-bordered"
+                                            align="center">
+                                            <tr>
+                                                <td style="width: 179px;">
+                                                    Họ tên
+                                                </td>
+                                                <td style="width: 329px;">
+                                                    <input type="text" name="tourdulich_hoten" id="tourdulich_hoten"
+                                                        maxlength="50" size="35">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Địa chỉ
+                                                </td>
+                                                <td>
+                                                    <textarea name="tourdulich_diachi" id="tourdulich_diachi" cols="38"
+                                                        rows="5"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Điện thoại
+                                                </td>
+                                                <td>
+                                                    <input id="tourdulich_telephone" type="number"
+                                                        name="tourdulich_dienthoai" size="20" maxlength="25">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Khách Việt Nam
+                                                </td>
+                                                <td>
+                                                    <input type="checkbox" name="tourdulich_khachvn"
+                                                        id="tourdulich_khachvn" checked="checked">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Chọn tour
+                                                </td>
+                                                <td>
+                                                    <select size="1" name="tourdulich_chontour"
+                                                        id="tourdulich_chontour">
+                                                        <option value="1">Imperial Citadel of Hue</option>
+                                                        <option value="2">Bach Ma National Park</option>
+                                                        <option value="3">Tomb of Minh Mang</option>
+                                                        <option value="4">Thien Ba Pagoda</option>
+                                                        <option value="5">Tomb of Tu Duc</option>
+                                                        <option value="6">Forbidden City</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Phương tiện
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="tourdulich_phuongtien-maybay"
+                                                        id="tourdulich_phuongtien" checked="checked">Máy bay
+                                                    <input type="radio" name="tourdulich_phuongtien-xedulich"
+                                                        id="tourdulich_phuongtien">Xe du lịch
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                    <fieldset>
+                                                        <legend>
+                                                            Số lượng đoàn khách
+                                                        </legend>
+                                                        Người lớn
+                                                        <input type="number" style="width: 100px;" required
+                                                            id="tourdulich_form_nguoilon" min="1" size="10">
+                                                        Trẻ em
+                                                        <input type="number" style="width: 100px;" required
+                                                            id="tourdulich_treem" min="1" size="10">
+                                                    </fieldset>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Ghi chú thêm
+                                                </td>
+                                                <td>
+                                                    <textarea name="tourdulich_ghichu" id="tourdulich_ghichu" cols="38"
+                                                        rows="5"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                    <input type="button" name="tourdulich_accecpted-button"
+                                                        value="Đồng ý" onclick="dangnhapthanhcong()">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                    <label for="" id="tourdulich_successfulregister"></label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center bg-dark text-white container-fluid mt-5" style="padding: 15px 0px;font-family: Quicksand;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <a class="text-white" href="" style="font-size: 14px;">
+                    <strong>THUA THIEN HUE TOURISM DEPARTMENT</strong>
+                </a>
+                <p style="font-size: 12px;margin-bottom: 10px;">
+                    Responsible for the content: Mr. Tran Huu<br />
+                    Thuy Giang - Director of License No. 06/2017/GP-TTDT -<br />
+                    Issued on November 29, 2017 Clearly Stating the source of "visithue.vn" or "huetourism.gov.vn" when
+                    reissuing information.<br />
+                </p>
+                <span style="font-size: 12px;">Registered by
+                    <a class="text-white" href="">Hue Tourism Portal</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="./js/myjs.js"></script>
+</body>
+
+</html>

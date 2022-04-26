@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Sử</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/myCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Paytone+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
+    <link href="//db.onlinewebfonts.com/c/33bc06ea126d3ff79886277122f1f510?family=Brush+Script+MT" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <!-- NavBar cho PC và tablet -->
+                <nav id="my-header-navbar" class="my-header-navbar navbar navbar-expand-md bg-success fixed-top"
+                    style="padding: 0;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid navbar-brand-logo" src="./images/TrangChu/huevisit.png" alt="Logo">
+                            <span class="navbar-brand-title">HUẾ TRAVEL</span>
+                        </a>
+
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav" style="list-style: none;">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Khám phá Huế
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="LichSu.html">
+                                                                <img src="./images/submenu/vuagialong.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Lịch sử</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/vanhoa.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Văn hóa Huế</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/disan.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Di sản</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/amthuc.png"
+                                                                    class="submenu_icon" style="" alt="">
+                                                                <p>Ẩm thực Huế</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Điều cần làm
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="TourDuLichKhamPhaHue.html">
+                                                                <img src="./images/submenu/tourdulich.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Tour du lịch</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/luutru.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Lưu trú</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/vanchuyen.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Dịch vụ ăn uống</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/muasam.png"
+                                                                    class="submenu_icon" alt="">
+                                                                <p>Mua sắm</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle setposition" href="#" id="navbardrop"
+                                        data-toggle="dropdown">
+                                        Độc đáo Huế
+                                    </a>
+                                    <div class="container-fluid ">
+                                        <div class="container" style="width: 100%;">
+                                            <div class="row">
+                                                <div class="submenu">
+                                                    <ul class="text-center submenu_display"
+                                                        style="list-style-type: none;">
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/tinhhoahue.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Tinh hoa Huế</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/sukientrongtuan.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Sự kiện trong tuần</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/huebian.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Huế bí ẩn</p>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+                                                            <a href="">
+                                                                <img src="./images/submenu/huecuachungta.jpg"
+                                                                    class="submenu_icon-type2" alt="">
+                                                                <p>Huế của chúng mình</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactForm.html">Liên hệ</a>
+                                </li>
+                                <!-- <audio controls autoplay style="position: absolute;right: 0;height: 30px;">
+                                    <source src="./audio/Nang Tho Xu Hue - Thuy Chi.mp3" type="audio/mpeg">
+                                </audio> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- NavBar mobile -->
+                <nav id="my-header-navbar-version-2"
+                    class="my-header-navbar-version-2 navbar navbar-expand-md bg-primary fixed-top navbar-dark">
+                    <div class="container" style="display: flex;justify-content: left;">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid navbar-brand-logo" src="./images/TrangChu/huevisit.png" alt="Logo">
+                            <span class="navbar-brand-title">HUẾ TRAVEL</span>
+                        </a>
+
+                        <div id="mobile-menu" class="mobile-menu-btn">
+                            <i class="menu-icon fa fa-bars"></i>
+                        </div>
+
+                        <!-- Links -->
+                        <div class="navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Khám phá Huế
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="LichSu.html">Lịch sử</a>
+                                        <a class="dropdown-item" href="LichSu.html">Văn hóa Huế</a>
+                                        <a class="dropdown-item" href="LichSu.html">Di sản</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="LichSu.html">Ẩm thực Huế</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Điều cần làm
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Tour du lịch</a>
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Dịch vụ ăn uống</a>
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Mua sắm</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="TourDuLichKhamPhaHue.html">Lưu trú</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Độc đáo Huế
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="index.html">Tinh hoa Huế</a>
+                                        <a class="dropdown-item" href="index.html">Sự kiện trong tuần</a>
+                                        <a class="dropdown-item" href="index.html">Huế bí ẩn</a>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <a class="dropdown-item" href="index.html">Huế của chúng mình</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactForm.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="main_history_page_body">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8 offset-md-1 col-md-10 offset-lg-2 col-lg-8 col-xl-12 offset-xl-0">
+                    <!-- <img class="container-fluid" src="./images/historypage/king/chilamtrai.jpg" alt=""> -->
+                    <div class="history-page-title pt-5">
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                        <!-- <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">| 皇帝-13 VI HOANG DE NHA NGUYEN-皇帝 |</h2> -->
+                        <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">13
+                            VI HOANG DE NHA NGUYEN</h2>
+
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr align="center"
+                        style="content:'';background-color: #1c1c20;height: 3px;left: calc(50% - 25px);display: block;">
+                    <div id="history_king">
+                        <div class="swiper mySwiper text-white">
+                            <div class="swiper-wrapper text-center font-weight-bold">
+                                <div class="swiper-slide">
+                                    <img src="./images/historypage/king/1vuagialong.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Gia_Long">Vua Gia Long (1762 -
+                                        1820)</a><br />
+                                    <p>Là vị Hoàng đế đã thành lập nhà Nguyễn, vương triều phong kiến cuối cùng trong
+                                        lịch sử
+                                        Việt Nam. Ông tên thật là Nguyễn Phúc Ánh (thường được gọi tắt là Nguyễn Ánh),
+                                        trị vì từ
+                                        năm 1802 đến khi qua đời năm 1820</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/2vuaminhmang.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Minh_M%E1%BA%A1ng">Vua Minh Mạng (1791 -
+                                        1841)</a><br />
+                                    <p>Là vị Hoàng đế thứ hai của nhà Nguyễn. Được xem là một ông vua năng động và quyết
+                                        đoán,
+                                        Minh Mạng đã đề xuất hàng loạt cải cách từ nội trị đến ngoại giao, trong đó có
+                                        việc ngăn
+                                        chặn quyết liệt ảnh hưởng của phương Tây đến Việt Nam</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/3thieutri.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Thi%E1%BB%87u_Tr%E1%BB%8B">Vua Thiệu Trị
+                                        (1807 –
+                                        1847) </a><br />
+                                    <p>Là vị Hoàng đế thứ ba của nhà Nguyễn, trị vì từ năm 1841 đến 1847. Ông có tên húy
+                                        là
+                                        Nguyễn Phúc Miên Tông. Ông là con trưởng của vua Minh Mạng và Tá Thiên Nhân
+                                        Hoàng hậu Hồ
+                                        Thị Hoa.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/4vuatuduc.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/T%E1%BB%B1_%C4%90%E1%BB%A9c">Vua Tự Đức (1829
+                                        –
+                                        1883)</a><br />
+                                    <p>Là vị Hoàng đế thứ tư của nhà Nguyễn. Ông tên thật là Nguyễn Phúc Hồng Nhậm, là
+                                        con trai
+                                        thứ hai của vị hoàng đế thứ 3 triều Nguyễn, Thiệu Trị. Ông trị vì từ năm 1847
+                                        đến 1883.
+                                        Trong thời gian trị vì của ông, nước Đại Nam dần dần rơi vào tay quân Pháp.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/5vuaducduc.png" />
+                                    <a href="https://en.wikipedia.org/wiki/D%E1%BB%A5c_%C4%90%E1%BB%A9c">Vua Dục Đức
+                                        (1852 -
+                                        1883)</a><br />
+                                    <p>Là vị vua thứ năm của nhà Nguyễn, ông lên ngôi ngày 20 tháng 7 năm 1883, nhưng
+                                        chỉ tại vị
+                                        được ba ngày. Làm vua được 3 ngày chưa kịp đặt niên hiệu thì Ưng Chân đã bị phế
+                                        bỏ và
+                                        giam vào ngục cho đến khi mất. Ông mất ngày 6 tháng 10 năm 1883.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/6vuahiephoa.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Hi%E1%BB%87p_H%C3%B2a">Vua Hiệp Hòa (1847 –
+                                        1883)</a><br />
+                                    <p>Là vị vua thứ sáu của vương triều nhà Nguyễn trong lịch sử Việt Nam. Tên thật của
+                                        ông là
+                                        Nguyễn Phúc Hồng Dật là con út của vua Thiệu Trị. Ông lên ngôi tháng 7/1883,
+                                        nhưng bị
+                                        phế truất và qua đời vào tháng 10 cùng năm.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/7vuakienphuc.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Ki%E1%BA%BFn_Ph%C3%BAc">Vua Kiến Phúc (1869 –
+                                        1884)</a><br />
+                                    <p>Là vị vua thứ bảy của vương triều nhà Nguyễn. Ông là con thứ ba của Kiên Thái
+                                        vương
+                                        Nguyễn Phúc Hồng Cai và bà Bùi Thị Thanh, được vua Tự Đức chọn làm con nuôi.
+                                        Kiến Phúc
+                                        lên ngôi năm 1883, tại vị được 8 tháng thì qua đời khi mới 15 tuổi.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/8vuahamnghi.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/H%C3%A0m_Nghi">Vua Hàm Nghi (1871 –
+                                        1943)</a><br />
+                                    <p>Là vị Hoàng đế thứ 8 của nhà Nguyễn. Sau khi cuộc phản công tại kinh thành Huế
+                                        thất bại
+                                        năm 1885, Tôn Thất Thuyết đưa ông ra ngoài và phát hịch Cần Vương chống thực dân
+                                        Pháp.
+                                        Phong trào Cần Vương kéo dài đến năm 1888 thì Hàm Nghi bị bắt. Sau đó, ông bị
+                                        đem an trí
+                                        ở Alger (thủ đô xứ Algérie).
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/9vuadongkhanh.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Kh%C3%A1nh">Vua Đồng Khánh
+                                        (1864 –
+                                        1889)</a><br />
+                                    <p>Là vị Hoàng đế thứ chín của nhà Nguyễn. Tên húy của nhà vua các tài liệu ghi khác
+                                        nhau.
+                                        Ông là con trưởng của Kiên Thái Vương Nguyễn Phúc Hồng Cai và bà Bùi Thị Thanh,
+                                        được vua
+                                        Tự Đức nhận làm con nuôi năm 1865.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/10vuathanhthai.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Th%C3%A0nh_Th%C3%A1i">Vua Thành Thái (1879 –
+                                        1954)</a><br />
+                                    <p>Là vị Hoàng đế thứ 10 của nhà Nguyễn, tại vị từ 1889 đến 1907. Tên húy của ông là
+                                        Nguyễn
+                                        Phúc Bửu Lân, còn có tên là Nguyễn Phúc Chiêu. Ông là con thứ 7 của vua Dục Đức
+                                        và bà Từ
+                                        Minh Hoàng hậu (Phan Thị Điểu). Do chống Pháp nên ông bị đi đày tại ngoại quốc.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/11vuaduytan.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Duy_T%C3%A2n">Vua Duy Tân (1900 –
+                                        1945)</a><br />
+                                    <p>Là vị vua thứ 11 của nhà Nguyễn. Khi vua cha bị thực dân Pháp lưu đày, ông được
+                                        người
+                                        Pháp đưa lên ngôi khi còn thơ ấu. Tuy nhiên, ông bất hợp tác với Pháp và bí mật
+                                        liên lạc
+                                        với các lãnh tụ khởi nghĩa Việt Nam. Vì lý do này, ông bị người Pháp đem an trí
+                                        trên đảo
+                                        Réunion ở Ấn Độ Dương.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/12vuakhaidinh.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/Kh%E1%BA%A3i_%C4%90%E1%BB%8Bnh">Vua Khải Định
+                                        (1885 –
+                                        1925)</a><br />
+                                    <p>Là vị Hoàng đế thứ 12 nhà Nguyễn trong lịch sử Việt Nam, ở ngôi từ 1916 đến 1925.
+                                        Ông có
+                                        tên húy là Nguyễn Phúc Bửu Đảo, còn có tên là Nguyễn Phúc Tuấn, con trưởng của
+                                        vua Đồng
+                                        Khánh và bà Hựu Thiên Thuần Hoàng hậu Dương Thị Thục.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="./images/historypage/king/13vuabaodai.jpg" />
+                                    <a href="https://en.wikipedia.org/wiki/B%E1%BA%A3o_%C4%90%E1%BA%A1i">Bảo Đại (1913 –
+                                        1997)</a><br />
+                                    <p>Là vị Hoàng đế thứ 13 và cuối cùng của triều Nguyễn, cũng là vị vua cuối cùng của
+                                        chế độ
+                                        quân chủ Việt Nam. Tên húy của ông là Nguyễn Phúc Vĩnh Thụy, còn có tên là
+                                        Nguyễn Phúc
+                                        Thiển , tục danh "mệ Vững", là con của vua Khải Định và Từ Cung Hoàng thái hậu.
+                                        Đúng ra
+                                        "Bảo Đại" chỉ là niên hiệu nhà vua, nhưng tục lệ vua nhà Nguyễn chỉ giữ một niên
+                                        hiệu
+                                        nên nay thường dùng như là tên nhà vua. </p>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lich su trieu Nguyen -->
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8 offset-md-1 col-md-10 offset-lg-2 col-lg-8 col-xl-12 offset-xl-0">
+                    <div class="history-page-title pt-5">
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                        <!-- <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">| 歷史-LỊCH SỬ TRIỀU NGUYỄN-歷史 |</h2> -->
+                        <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">LICH
+                            SU TRIEU NGUYEN</h2>
+
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr align="center"
+                        style="content:'';background-color: #1c1c20;height: 3px;left: calc(50% - 25px);display: block;">
+                </div>
+            </div>
+            <div
+                class="row row-cols-sm-2 offset-sm-2 col-sm-8 row-cols-md-2 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-sm-6 col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url(./images/historypage/news/huetourism_Thuyen-buom-tren-Cuu-dinh.jpg);background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Những vua đầu triều Nguyễn với hoạt động
+                            cứu hộ, cứu nạn trên biển giai đoạn 1802-1803</a>
+                        <p class="content_docdaohue-content-detail">Triều Nguyễn đã phát huy truyền thống của ông cha...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_So-phan-phi-tan-cung-nu-bi-thai-hoi-1.jpg');background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Số phận ít biết về các phi tần, cung nữ
+                            bị thải hồi</a>
+                        <p class="content_docdaohue-content-detail">Trừ trường hợp được vua ban hôn hoặc trốn khỏi...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_bien-thuan-an.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Quan Hệ Hợp Tác Chống Cướp Biển Của Triều
+                            Nguyễn Với Nhà Thanh Và Vấn Đề Lãnh Hải Giai Đoạn 1802 – 1883</a>
+                        <p class="content_docdaohue-content-detail">Những vị vua đầu triều Nguyễn rất xem trọng biển ...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_Quan-noi-tan-Nguyen-Khoa-Dang-4.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Quan Nội tán xử án như thần</a>
+                        <p class="content_docdaohue-content-detail">Khi bàn về tài xử án, người ta hay nhắc ...</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="row row-cols-md-2 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url(./images/historypage/news/huetourism_Chuyen\ xay\ cau\ TRang\ Tien\ 3.jpg);background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Chuyện sửa cầu Trường Tiền - bài 2: Hòa
+                            mình vào núi Ngự sông Hương</a>
+                        <p class="content_docdaohue-content-detail">Cầu Trường Tiền, từ cầu gỗ đến cầu sắt đã ...</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_Song-Gianh.jpg');background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Hoạt động của quân đội thời chúa Nguyễn
+                            (Phần 2)</a>
+                        <p class="content_docdaohue-content-detail">Chiến tranh với đàng Ngoài...</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/4ddd04ff68269d78c437.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Hoạt động của quân đội thời chúa Nguyễn
+                            (Phần 1)</a>
+                        <p class="content_docdaohue-content-detail">Những trận chiến dưới thời chúa Nguyễn Hoàng
+                            (1558-1613)</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_Bi-an-kho-bay-vua-Ham-Nghi-1.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Bí ẩn về kho báu Vua Hàm Nghi</a>
+                        <p class="content_docdaohue-content-detail">Kho báu huy hoàng của Vua Hàm Nghi dường như ...</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="row row-cols-md-2 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url(./images/historypage/news/huetourism_tran-do-luyen-quan-3.jpg);background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">TỔ CHỨC QUÂN ĐỘI THỜI CHÚA NGUYỄN (phần
+                            cuối)</a>
+                        <p class="content_docdaohue-content-detail">Chính sách thưởng phạt trong quân đội</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_To-chuc-quan-doi-thoi-chua-Nguyen-1_17_3_2021_18_17_23_494_PM.png');background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">TỔ CHỨC QUÂN ĐỘI THỜI CHÚA NGUYỄN (phần
+                            2)</a>
+                        <p class="content_docdaohue-content-detail">Xuất phát từ tính chất của vùng đất đang trong .</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_vua-gia-long.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Vua Gia Long và giai thoại cưỡi trâu qua
+                            sông thoát chết</a>
+                        <p class="content_docdaohue-content-detail">Trong sử Việt, nhiều vị vua nước Việt được dã ...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_sung-than-cong-1.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Tổ chức quân đội thời Chúa Nguyễn (tiếp
+                            theo)</a>
+                        <p class="content_docdaohue-content-detail">Để xây dựng cơ đồ ở Đàng Trong, các chúa ...</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="row row-cols-md-2 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url(./images/historypage/news/huetourism_Chua-KHai-Tuong-1.jpg);background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Chứng tích duy nhất của ngôi chùa nơi vua
+                            Minh Mạng ra đời</a>
+                        <p class="content_docdaohue-content-detail">Hàng ngày, nhiều người ghé thăm và ngắm nhìn tượng
+                            ...</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_Hinh-anh-Viet-nam-100-nam-truoc-12.png');background-size:cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Những bức ảnh về nước ta hơn 100 năm
+                            trước</a>
+                        <p class="content_docdaohue-content-detail">Sách "Đông Dương xinh đẹp và kỳ vĩ" tập hợp ...</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_Hinh-anh-Viet-nam-100-nam-truoc-6.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Thú vị với hình ảnh Việt Nam hơn 100 năm
+                            trước qua góc máy nhà nhiếp ảnh Pháp</a>
+                        <p class="content_docdaohue-content-detail">Với góc nhìn đầy cảm xúc về đời sống, con ...</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border"
+                        style="height: 265px;background-image: url('./images/historypage/news/huetourism_Hue-100-nam-truoc-1.jpg');background-size: cover;background-position-x: 50%;">
+                    </div>
+                    <div class="content_docdaohue-content border">
+                        <a class="content_docdaohue-content-title" href="">Lịch Sử</a>
+                        <a class="content_docdaohue-content-specified" href="">Ảnh “chất như nước cất” về đời thường ở
+                            Huế 100 năm trước</a>
+                        <p class="content_docdaohue-content-detail">Tắm cho voi trên sông Hương, hai mẹ thăm chùa ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Phần kiến thức mới -->
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8 offset-md-1 col-md-10 offset-lg-2 col-lg-8 col-xl-12 offset-xl-0">
+                    <div class="history-page-title pt-5">
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                        <!-- <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">| 歷史-LỊCH SỬ TRIỀU NGUYỄN-歷史 |</h2> -->
+                        <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">KIEN
+                            THUC MOI</h2>
+
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr align="center"
+                        style="content:'';background-color: #1c1c20;height: 3px;left: calc(50% - 25px);display: block;">
+                </div>
+            </div>
+            <div
+                class="row row-cols-md-1 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/7eWNNa0Qi-c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/IuDdErwMaZQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div
+                class="row row-cols-md-2 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/TmSQriq0zTc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/MrutbbkcWSU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div
+                class="row row-cols-md-2 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/hKUkmdV3h78"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JSx5qKfhzdM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div
+                class="row row-cols-md-2 offset-md-2 col-md-8 pl-4 pr-4 mb-4 justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/LOSxuaJ8WKg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ogcAVPbObFM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Famous Quotes -->
+    <section id="famous_quotes" style="font-family: QuickSand;">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8 offset-md-1 col-md-10 offset-lg-2 col-lg-8 col-xl-12 offset-xl-0">
+                    <div class="history-page-title pt-5">
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                        <!-- <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">| 歷史-LỊCH SỬ TRIỀU NGUYỄN-歷史 |</h2> -->
+                        <h2 class="text-center" style="color: #FF9E6F;font-size: 39px;font-family: Brush Script MT">CÂU
+                            NÓI NỔI TIẾNG</h2>
+
+                        <div class="history-page-title-goldendragon">
+                            <img class="img-fluid rounded-circle" src="./images/historypage/king/reddragon.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr align="center"
+                        style="content:'';background-color: #1c1c20;height: 3px;left: calc(50% - 25px);display: block;">
+
+                    <div style="margin: 30px 0px;" class="famous_quotes_maincontent">
+                        <figure class="quote">
+                            <blockquote>
+                                And most importantly, whatever you do in this life... it's not legendary unless your
+                                friends are there to see it </blockquote>
+                            <figcaption>
+                                &mdash; Barney Stinson, <cite>How I Met Your Mother Season 9</cite> </figcaption>
+                        </figure>
+
+                        <figure class="quote">
+                            <blockquote>
+                                Tôi ra lệnh cho các binh sĩ của quân đội Hồng Quân Soviet: “Không lùi một bước.” </blockquote>
+                            <figcaption>
+                                &mdash; Joseph Stalin, <cite>Stalingrad Battle 1942 - 1943 World War II</cite> </figcaption>
+                        </figure>
+
+                        <figure class="quote">
+                            <blockquote>
+                                Đưa vào nơi mất để mà còn, rơi vào chỗ chết để mà sống </blockquote>
+                            <figcaption>
+                                &mdash; Hàn Tín, <cite>Sử ký Tư Mã Thiên</cite> </figcaption>
+                        </figure>
+
+                        <figure class="quote">
+                            <blockquote>
+                                Phàm những chuyện đại sự trong thiên hạ nên về nhà hỏi vợ, vợ bảo sao cứ làm ngược lại. Ắt sẽ thành công! </blockquote>
+                            <figcaption>
+                                &mdash; Tào Tháo, <cite>Tam Quốc Diễn Nghĩa</cite> </figcaption>
+                        </figure>
+
+                        <figure class="quote">
+                            <blockquote>
+                                Nhân, tín, trí, dũng, nghiêm, thiếu một thứ cũng không được. </blockquote>
+                            <figcaption>
+                                &mdash; Nhạc Phi, <cite>Nhạc Phi Diễn Nghĩa</cite> </figcaption>
+                        </figure>
+
+                        <figure class="quote">
+                            <blockquote>
+                                Kế một năm, chi bằng trồng lúa,<br/>
+                                Kế 10 năm, chi bằng trồng cây.<br/>
+                                Kế trọn đời, chi bằng trồng người,<br/>
+                                Trồng một, gặt một, ấy là lúa.<br/>
+                                Trồng một, gặt mười, ấy là cây,<br/>
+                                Trồng một, gặt trăm, ấy là người.
+                            </blockquote>
+                            <figcaption>
+                                &mdash; Quản Trọng, <cite>Mưu lược chính trị gia</cite> </figcaption>
+                        </figure>
+
+                        <figure class="quote">
+                            <blockquote>
+                                Tôi không sợ một đàn sư tử được lãnh đạo bởi một con cừu. Nhưng tôi e ngại một đàn cừu được dẫn dắt bởi một con sư tử
+                            </blockquote>
+                            <figcaption>
+                                &mdash; Alexander Đại Đế, <cite>Top 10 vị tướng vĩ đại nhất trong lịch sử cổ đại</cite> </figcaption>
+                        </figure>
+
+                        <figure class="quote">
+                            <blockquote>
+                                Tôi có thể thất bại một trận đánh, nhưng tôi sẽ chiến thắng cả cuộc chiến tranh!                            </blockquote>
+                            <figcaption>
+                                &mdash; Napoleon Bonapart, <cite>Top 10 vị tướng vĩ đại nhất trong lịch sử thế giới</cite> </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="text-center bg-dark text-white container-fluid" style="padding: 15px 0px;font-family: Quicksand;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <a class="text-white" href="" style="font-size: 14px;">
+                    <strong>THUA THIEN HUE TOURISM DEPARTMENT</strong>
+                </a>
+                <p style="font-size: 12px;margin-bottom: 10px;">
+                    Responsible for the content: Mr. Tran Huu<br />
+                    Thuy Giang - Director of License No. 06/2017/GP-TTDT -<br />
+                    Issued on November 29, 2017 Clearly Stating the source of "visithue.vn" or "huetourism.gov.vn" when
+                    reissuing information.<br />
+                </p>
+                <span style="font-size: 12px;">Registered by
+                    <a class="text-white" href="">Hue Tourism Portal</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/myjs.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
